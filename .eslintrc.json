@@ -1,0 +1,54 @@
+{
+  //
+  // デフォルトでは、親階層の設定ファイルも適用するようになってる
+  // root: true とすることで、親階層を探しに行かなくなる
+  //
+  "root": true,
+  //
+  // 検証する js 環境
+  //
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true
+  },
+  //
+  // typescript のリンター
+  // プラグインと併せて使う
+  //
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json",
+    //
+    // ESModules の構文が使用できる
+    //
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  //
+  // 外部のルールをもってこれる
+  //
+  "extends": [
+    "airbnb",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    //
+    // 記述は最後
+    //
+    "plugin:prettier/recommended"
+  ],
+  //
+  // 自分でルールを指定できる
+  //
+  "rules": {
+    "semi": "error",
+    "react/jsx-filename-extension": [
+      2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "no-use-before-define": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off"
+  }
+}
