@@ -1,4 +1,4 @@
-# React + TypeScript + Webpack + ESLint + Prettier 環境構築
+# React 環境構築
 
 React の開発環境構築にはいくつか方法があるが、  
 一番イージーなのが ```create-reacp-app```コマンド。  
@@ -53,4 +53,7 @@ npm run build
 
 # サーバー起動
 npm start
+
+http://localhost:9000
+にアクセス
 ```
