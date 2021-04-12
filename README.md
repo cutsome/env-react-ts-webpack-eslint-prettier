@@ -23,7 +23,7 @@ JavaScript のモジュールバンドラーであるWebpackを始めとし、
 ***
 ### ディレクトリ構造
 ```
-react-ts-webpack-eslint-prettier
+react-ts-dev
 ├── package-lock.json
 ├── package.json
 ├── public
