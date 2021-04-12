@@ -1,13 +1,24 @@
 import React, { FC } from 'react';
 import styles from './app.module.css';
+import logo from './images/logo.svg';
 import Test from './components/Test';
 
 const App: FC = () => {
   return (
-    <div className={styles.back}>
-      <Test />
-      <h1 className={styles.title}>Hello</h1>
-      <p className={styles.title2}>aho</p>
+    <div className={styles.app}>
+      <header className={styles.appHeader}>
+        <img src={logo} className={styles.appLogo} alt="logo" />
+        <p>Edit src/App.tsx and save to reload.</p>
+        <a
+          className={styles.appLink}
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+        <Test />
+      </header>
     </div>
   );
 };

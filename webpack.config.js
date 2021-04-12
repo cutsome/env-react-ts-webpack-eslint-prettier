@@ -130,7 +130,6 @@ module.exports = {
                   sourceMap: true,
                 }
               },
-              'postcss-loader',
             ],
           },
           {
@@ -151,7 +150,6 @@ module.exports = {
                   sourceMap: true,
                 },
               },
-              'postcss-loader',
             ],
           }
         ]
