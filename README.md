@@ -45,15 +45,16 @@ react-ts-webpack-eslint-prettier
 # パッケージインストール
 npm i
 
-# ビルド(開発モード)
-npm run dev
-
-# ビルド(本番モード)
-npm run build
-
 # サーバー起動
 npm start
 
 http://localhost:9000
 にアクセス
+
+# ビルドする場合
+# 開発モード
+npm run dev
+
+# 本番モード(コードを圧縮)
+npm run build
 ```
