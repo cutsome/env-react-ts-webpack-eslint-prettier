@@ -42,6 +42,7 @@ module.exports = {
     //  - ブラウザキャッシュ対策
     //
     filename: '[name].[contenthash].js',
+    publicPath: '/',
   },
   //
   // ソースマップ
@@ -56,6 +57,7 @@ module.exports = {
     // どのディレクトリをロードするか
     //
     contentBase: path.resolve(__dirname, 'public'),
+    historyApiFallback: true,
   },
   //
   // ローダー設定
