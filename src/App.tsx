@@ -1,9 +1,9 @@
-import React, { FC } from 'react';
+import React, { VFC } from 'react';
 import styles from './app.module.css';
 import logo from './images/logo.svg';
 import Test from './components/Test';
 
-const App: FC = () => {
+const App: VFC = () => {
   return (
     <div className={styles.app}>
       <header className={styles.appHeader}>
