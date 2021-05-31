@@ -49,6 +49,8 @@
     ],
     "no-use-before-define": "off",
     "import/no-unresolved": "off",
-    "import/extensions": "off"
-  }
+    "import/extensions": "off",
+    "no-param-reassign": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  } 
 }
