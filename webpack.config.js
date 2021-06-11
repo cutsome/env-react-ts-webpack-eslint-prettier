@@ -18,6 +18,7 @@ const ESLintPlugin = require('eslint-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const Dotenv = require('dotenv-webpack');
 
 module.exports = {
   //
@@ -223,7 +224,11 @@ module.exports = {
       // [name]: エントリーポイント名
       //
       filename: './[name].[contenthash].css',
-    })
+    }),
+		//
+		// .env から REACT_APP_XXX 変数読込できるようにする
+		//
+		new Dotenv(),
   ],
   //
   // ファイル制限の設定
