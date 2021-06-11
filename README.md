@@ -26,15 +26,20 @@ JavaScript のモジュールバンドラーであるWebpackを始めとし、
 react-ts-dev
 ├── package-lock.json
 ├── package.json
-├── public
 ├── src
 │   ├── App.tsx
 │   ├── Index.tsx
+│   ├── app
+│   │   ├── hooks.ts
+│   │   └── store.ts
 │   ├── app.module.css
 │   ├── components
 │   │   └── Test.tsx
+│   ├── images
+│   │   └── logo.svg
 │   ├── index.html
-│   └── python_icon.jpg
+│   └── slices
+│       └── counterSlice.ts
 ├── tsconfig.json
 ├── typings.d.ts
 └── webpack.config.js
